@@ -405,8 +405,12 @@
           <h1>Contact Us</h1>
           <form>
             <div>
-              <label for="yourname">Name:</label>
-              <input type="text" id="yourname" placeholder="Name" required />
+              <label for="firstname">First Name:</label>
+              <input type="text" id="firstname" placeholder="Name" required />
+            </div>
+            <div>
+              <label for="lastname">Last Name:</label>
+              <input type="text" id="lastname" placeholder="Name" required />
             </div>
             <div>
               <label for="youremail">Email:</label>
@@ -414,14 +418,18 @@
             </div>
             <div>
               <label for="yourmessage">Message:</label>
-              <input
-                type="text"
+              <textarea
                 id="yourmessage"
                 placeholder="Message"
                 required
-              />
+              ></textarea>
             </div>
-            <input type="submit" value="Submit" />
+            <div>
+              <input type="checkbox" id="subscribe" />
+              <label for="subscribe">Subscribe to our newsletter</label>
+            </div>
+
+            <button type="submit">Submit</button>
           </form>
         </section>
 
